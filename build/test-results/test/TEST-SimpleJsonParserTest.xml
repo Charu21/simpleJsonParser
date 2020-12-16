@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SimpleJsonParserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-15T01:23:10" hostname="DESKTOP-UKHE1P5" time="0.022">
+<testsuite name="SimpleJsonParserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-16T06:12:26" hostname="DESKTOP-UKHE1P5" time="0.035">
   <properties/>
-  <testcase name="getCompanyAccordingToSector_WithList_ShouldReturnList()" classname="SimpleJsonParserTest" time="0.022"/>
+  <testcase name="getCompanyAccordingToSector_WithNullList_ShouldReturnEmptyList()" classname="SimpleJsonParserTest" time="0.035"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

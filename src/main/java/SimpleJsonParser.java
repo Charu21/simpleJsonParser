@@ -18,7 +18,7 @@ public class SimpleJsonParser {
    private static final JSONParser jsonParser = new JSONParser();
 
         public static Map<String, List<model>> getCompanyAccordingToSector(String path){
-            if(path == null ) return Collections.emptyMap();
+            if(path == null || path.length()==0) return Collections.emptyMap();
             try( Reader reader = new FileReader(path)){
                 JSONObject jsonObject = (JSONObject) jsonParser.parse(reader);
 
@@ -26,10 +26,8 @@ public class SimpleJsonParser {
 
                 List<model> company = new ArrayList<>();
 
-                Iterator iterator = companies.iterator();
-
-                while(iterator.hasNext()){
-                    JSONObject entry = (JSONObject) iterator.next();
+                for (Object o : companies) {
+                    JSONObject entry = (JSONObject) o;
                     //System.out.println(entry);
                     company.add(parseCompanyEntry(entry));
                 }

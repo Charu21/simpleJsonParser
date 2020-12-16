@@ -5,10 +5,12 @@ import java.util.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SimpleJsonParserTest {
-//    @Test
-//    public void getCompanyAccordingToSector_WithNullList_ShouldReturnEmptyList() {
-//
-//    }
+
+    @Test
+    public void getCompanyAccordingToSector_WithNullList_ShouldReturnEmptyList() {
+        Map<String, List<model>> actualCompanyAccordingToSector = SimpleJsonParser.getCompanyAccordingToSector("");
+        assertEquals(actualCompanyAccordingToSector, Collections.emptyMap());
+    }
 
     @Test
     public void getCompanyAccordingToSector_WithList_ShouldReturnList() {
@@ -25,6 +27,6 @@ public class SimpleJsonParserTest {
         expectedCompanyBySector.put("Health Care", expected2);
         Map<String, List<model>> actualCompanyAccordingToSector = SimpleJsonParser.getCompanyAccordingToSector("D:\\javaPractice\\simpleJsonParser\\src\\main\\resources\\company.json");
         //assertEquals(expectedCompanyBySector, actualCompanyAccordingToSector);
-        assertEquals(true, Objects.equals(expectedCompanyBySector, actualCompanyAccordingToSector));
+        assertEquals(actualCompanyAccordingToSector, expectedCompanyBySector);
     }
 }

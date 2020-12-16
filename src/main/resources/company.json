@@ -1,0 +1,27 @@
+{
+  "companies": [{
+    "name": "3M Company",
+    "sector": "Industrials",
+    "symbol": "MMM",
+    "isin": "A80C7A725BE4",
+    "price": 56.72
+  }, {
+    "name": "A.O. Smith Corp",
+    "sector": "Industrials",
+    "symbol": "AOS",
+    "isin": "DAB7C6FE8B72",
+    "price": 154.54
+  }, {
+    "name": "Abbott Laboratories",
+    "sector": "Health Care",
+    "symbol": "ABT",
+    "isin": "F2A9F8D38836",
+    "price": 73.55
+  }, {
+    "name": "AbbVie Inc.",
+    "sector": "Health Care",
+    "symbol": "ABBV",
+    "isin": "173E3FD20628",
+    "price": 110.32
+  }]
+}

@@ -9,7 +9,7 @@ symbolMaps/
 out/
 test-results/
 build
-
+build/*
 # Created by https://www.gitignore.io/api/intellij
 
 ### Intellij ###
@@ -77,7 +77,8 @@ modules.xml
 # Sonarlint plugin
 .idea/sonarlint
 
-
+# Gradle bin files
+.gradle/*
 # End of https://www.gitignore.io/api/intellij
 
 compiler.xml
